@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interés Rápido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <h1>Bienvenido a Interés Rápido</h1>
+        <form id="player-form">
+            <label for="player1-name">Nombre del Jugador 1:</label>
+            <input type="text" id="player1-name" required>
+            <label for="player1-icon">Icono del Jugador 1:</label>
+            <select id="player1-icon">
+                <option value="🟢">🟢</option>
+                <option value="🔵">🔵</option>
+                <option value="🟣">🟣</option>
+                <option value="🟡">🟡</option>
+            </select>
+            <label for="player2-name">Nombre del Jugador 2:</label>
+            <input type="text" id="player2-name" required>
+            <label for="player2-icon">Icono del Jugador 2:</label>
+            <select id="player2-icon">
+                <option value="🔴">🔴</option>
+                <option value="🔶">🔶</option>
+                <option value="🔷">🔷</option>
+                <option value="⚫">⚫</option>
+            </select>
+            <button type="submit">Comenzar Juego</button>
+        </form>
+    </div>
+
+    <div class="container" id="game-container" style="display: none;">
+        <h1>Interés Rápido</h1>
+        <div id="game-board">
+            <!-- El tablero del juego se generará aquí -->
+        </div>
+        <div id="controls">
+            <div id="timer">Tiempo: <span id="time-left">60</span> segundos</div>
+            <div id="current-player">Jugador actual: <span id="player-name"></span></div>
+            <div id="score-board">
+                <div id="player1-score" class="player-score"></div>
+                <div id="player2-score" class="player-score"></div>
+            </div>
+        </div>
+        <div id="challenge-card">
+            <!-- Las cartas de desafío se mostrarán aquí -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+}
+
+.loading-screen {
+    text-align: center;
+    background-color: #20232a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+}
+
+.loading-screen form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loading-screen label, .loading-screen input, .loading-screen select {
+    margin-bottom: 10px;
+}
+
+.loading-screen button {
+    padding: 10px;
+    border: none;
+    background-color: #61dafb;
+    color: #20232a;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    background-color: #20232a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 800px;
+}
+
+h1 {
+    color: #61dafb;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.space {
+    padding: 20px;
+    background-color: #61dafb;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.space:hover {
+    transform: scale(1.1);
+}
+
+.active {
+    background-color: #21a0a0;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+#timer, #current-player {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#score-board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-score {
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+}
+
+#challenge-card {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #333842;
+    border-radius: 10px;
+    text-align: left;
+}
